@@ -9,11 +9,23 @@ export default function App() {
     setColor(generatedColor);
   };
 
+  const gradient = 'linear-gradient(45deg, #5f00b8, #ff2d55, #ffa300)';
+
+  const userGradient = {
+    background: gradient,
+    WebkitBackgroundClip: 'text',
+    backgroundClip: 'text',
+    color: 'transparent',
+  };
+
   return (
     <div className="App">
       <div className="Body">
         <h1>
-          <span className="Radient">Random Color</span> Generator
+          <span style={userGradient} className="Radient">
+            Random Color
+          </span>{' '}
+          Generator
         </h1>
         <h2>
           Generate endless color possibilities with our Random Color Generator

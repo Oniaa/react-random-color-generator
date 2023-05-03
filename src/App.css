@@ -9,15 +9,18 @@
 }
 
 .Radient {
-  color: #ffffff;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+
+  /*-webkit-text-fill-color: transparent;
   background-clip: text;
   background-image: -webkit-linear-gradient(
     45deg,
     color(display-p3 0.37 0.03 1),
     color(display-p3 1 0.06 0.66),
     color(display-p3 1 0.43 0.07)
-  );
+  );*/
 }
 
 h1 {
