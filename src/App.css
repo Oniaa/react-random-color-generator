@@ -9,6 +9,7 @@
 }
 
 .Radient {
+  color: #ffffff;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-image: -webkit-linear-gradient(
