@@ -3,8 +3,12 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  const generatedColor = randomColor();
-  const [color, setColor] = useState(generatedColor);
+  const [color, setColor] = useState(randomColor());
+  const handleClick = () => {
+    const generatedColor = randomColor();
+    setColor(generatedColor);
+  };
+
   return (
     <div className="App">
       <div>
@@ -14,8 +18,8 @@ export default function App() {
         {color}
         <p>Generated Color:</p>
       </div>
-      <div style={{ backgroundColor: generatedColor }} className="container">
-        <button onClick={() => setColor(randomColor())}>Generate</button>
+      <div style={{ backgroundColor: color }} className="container">
+        <button onClick={handleClick}>Generate</button>
       </div>
     </div>
   );
