@@ -11,15 +11,20 @@ export default function App() {
 
   return (
     <div className="App">
-      <div>
-        <h1>Random Color Generator</h1>
+      <div className="Body">
+        <h1>
+          <span className="Radient">Random Color</span> Generator
+        </h1>
+        <h2>
+          Generate endless color possibilities with our Random Color Generator
+          tool.
+        </h2>
+      </div>
+      <div style={{ backgroundColor: color }} className="Container">
+        <p>Generated Color: {color}</p>
       </div>
       <div>
-        {color}
-        <p>Generated Color:</p>
-      </div>
-      <div style={{ backgroundColor: color }} className="container">
-        <button onClick={handleClick}>Generate</button>
+        <button onClick={handleClick}> Generate</button>
       </div>
     </div>
   );
