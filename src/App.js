@@ -24,18 +24,17 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="Body">
-        <h1>
-          <span style={userGradient} className="Radient">
-            Random Color
-          </span>{' '}
-          Generator
-        </h1>
-        <h2>
-          Generate endless color possibilities with our Random Color Generator
-          tool.
-        </h2>
-      </div>
+      <h1>
+        <span style={userGradient} className="Radient">
+          Random Color
+        </span>{' '}
+        Generator
+      </h1>
+      <h2>
+        Generate endless color possibilities with our Random Color Generator
+        tool.
+      </h2>
+
       <div style={{ backgroundColor: color }} className="Container">
         <p>Generated Color: {color}</p>
         <br />
