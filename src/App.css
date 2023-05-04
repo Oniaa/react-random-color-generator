@@ -1,7 +1,9 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
   background-color: #ffffff;
-  height: 100%;
 }
 
 .Radient {
@@ -11,42 +13,36 @@
 }
 
 h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding-top: 0;
   color: #000;
   font-size: 3.25em;
   font-weight: 900;
 }
 
 h2 {
+  margin-top: 0;
+  margin-bottom: 60px;
   color: #52595f;
   font-weight: 400;
 }
 
 .Container {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  display: inline-block;
+  display: flex;
   justify-content: center;
-  height: 15em;
-  width: 25em;
-  position: relative;
-  border-radius: 25px;
-  background-color: black;
-}
-
-p {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  width: 25%;
+  height: 30vh;
+  text-align: center;
   font-size: 1.5em;
   font-weight: 250;
-  color: black;
+  color: #f0f0f0;
+  border-radius: 25px;
 }
 
 button {
-  margin-top: 250px;
+  margin-top: 20px;
   font-size: 1em;
   height: 2.5em;
   width: 12.5em;
@@ -55,4 +51,8 @@ button {
   outline: none;
   color: #000;
   background-color: #f0f0f0;
+}
+
+button:hover {
+  background-color: dimgray;
 }

@@ -35,9 +35,11 @@ export default function App() {
         tool.
       </h2>
 
-      <div style={{ backgroundColor: color }} className="Container">
-        <p>Generated Color: {color}</p>
+      <div className="Container" style={{ backgroundColor: color }}>
+        Generated Color: {color}
         <br />
+      </div>
+      <div>
         <button onClick={handleClick}>Generate</button>
       </div>
     </div>
